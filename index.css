@@ -2,6 +2,16 @@
   color: #97c93e !important;
 }
 
+.exo-btn {
+  background-color: #97c93e;
+  color: white;
+}
+.exo-btn:hover {
+  background-color: #82ad36;
+  color: white;
+}
+
+
 #header img {
   width: 120px;
 }
@@ -29,6 +39,15 @@
 #carousel .overlay .row {
   height: 100%;
 }
+
+#bearing-chick{
+  background-color: #343a40;
+  color: white;
+}
+#bearing-chick img{
+  max-width: 100%;
+}
+
 #footer{
   background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
 }
