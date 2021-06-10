@@ -11,31 +11,31 @@
 
     <title>Exodust</title>
   </head>
-  <body>
 
+  <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-offset="-50">
     <!-- Header -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="./assets/img/i2_logo.png" alt="Logo de Exodus"></a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto ms-2 mb-lg-0">
+          <ul class="nav navbar-nav ms-auto ms-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">The Lore</a>
+              <a class="nav-link active" aria-current="page" href="#carousel-span">The Lore</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Exomons</a>
+              <a class="nav-link" href="#exomon-span">Exomons</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Bearing Chick</a>
+              <a class="nav-link" href="#bearing-chick-span">Bearing Chick</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">News and Updates</a>
+              <a class="nav-link" href="#write-span">Create your Adventure</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-media" href="#">Social Media</a>
+              <a class="nav-link text-media" href="#social-span">Social Media</a>
             </li>
           </ul>
         </div>
@@ -44,9 +44,10 @@
     <!-- /Header -->
 
 <!-- Main -->
-    <!-- Carousel -->
-  <main id="main">
-    <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+<!-- Carousel -->
+<main id="main">
+  <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+      <a id="carousel-span" class="offset-anchor"></a>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./assets/img/i3_bearingChickLandscape.png" class="d-block w-100" alt="Bearing Chik game artistic landscape">
@@ -60,8 +61,8 @@
               <div class="col-md-6 offset-md-6 text-center text-md-end">
                 <h1>Exodust chapter 1: Revelation</h1>
                 <p>Adventure has just begun, without knowing a thing about itself, Keshin manages to establish friendship with some humans. Together, they will overcome adversity and find a way to freedom that will lead them to discover a new world of amazing creatures.</p>
-                <a href="#" class="btn btn-outline-light">Show me the whole history</a>
-                <button type="button" class="btn btn-success exo-btn">Just hand me the games!</button>
+                <a href="#" class="mt-2 btn btn-outline-light">Show me the whole history</a>
+                <button type="button" class="mt-2 btn btn-success exo-btn">Just hand me the games!</button>
               </div>
             </div>
           </div>
@@ -74,10 +75,12 @@
 <!-- /Main -->
 
 <!-- Exomones -->
-<section id="exomon" class="mt-4 mb-4">
+<section id="exomon" class="pt-4 pb-4">
+  <a id="exomon-span" class="offset-anchor"></a>
+
   <div class="container">
     <div class="row">
-      <div class="col text-center extuppercase">
+      <div class="col text-center extuppercase text-white">
         <small>
           Meet the 
         </small>
@@ -86,7 +89,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 mt-2">
+      <div class="exocard col-md-4 mt-2">
         <div class="card">
           <img src="./assets/img/i5_keshin.png" class="card-img-top" alt="keshin">
           <div class="card-body">
@@ -96,11 +99,11 @@
               <span class="badge bg-light text-dark border border-secondary">Flying</span>
             </div>
             <p class="card-text">The starter one, fierly defender and tactical Chick.</p>
-            <a href="#" class="btn btn-primary">Know more about him</a>
+            <a href="#" class="btn exo-btn btn-primary">Know more about him</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mt-2">
+      <div class="exocard col-md-4 mt-2">
         <div class="card">
           <img src="./assets/img/i6_goton.png" class="card-img-top" alt="Goton">
           <div class="card-body">
@@ -109,11 +112,11 @@
               <span class="badge bg-light text-dark border border-secondary">???</span>
             </div>
             <p class="card-text">Raw Power. One Shot. One Oportunity.</p>
-            <a href="#" class="btn btn-primary">Know more about him</a>
+            <a href="#" class="btn exo-btn btn-primary">Know more about him</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mt-2">
+      <div class="exocard col-md-4 mt-2">
         <div class="card">
           <img src="./assets/img/i7_nika.png" class="card-img-top" alt="nika">
           <div class="card-body">
@@ -122,7 +125,7 @@
               <span class="badge bg-light text-dark border border-secondary">???</span>
             </div>
             <p class="card-text">Inamovible. Eternal. She may know what's going on. Cow.</p>
-            <a href="#" class="btn btn-primary">Know more about her</a>
+            <a href="#" class="btn exo-btn btn-primary">Know more about her</a>
           </div>
         </div>
       </div>
@@ -133,9 +136,11 @@
 
       <!-- Bearink Chick -->
       <section id="bearing-chick">
+        <a id="bearing-chick-span" class="offset-anchor"></a>
+
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-lg-6 p-0 p-0">
+                <div class="col-12 col-lg-6 p-0 p-0 d-flex justify-content-center">
                   <img src="./assets/img/i8_bearing-chick-collage.png" alt="Bearing Chick">
                 </div>
                 <div class="col-12 col-lg-6 pt-4 pb-4 text-center">
@@ -150,7 +155,9 @@
     <!-- /Bearink Chick -->
 
     <!-- Juega yá -->
-      <section id="start-gaming mt-2 mb-2">
+      <section id="write">
+        <a id="write-span" class="offset-anchor"></a>
+
         <div class="container mt-2 mb-2 border rounded border-secondary bg-light">
           <div class="row">
             <div class="col mt-2 text-uppercase text-center">
@@ -165,7 +172,7 @@
           </div>
           <div class="row">
             <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
-              <form>
+              <form class="mt-3">
                 <div class="row g-3">
                   <div class=" form-group col col-12 col-md-6">
                     <input type="text" class="form-control" placeholder="First name" aria-label="First name">
@@ -174,16 +181,16 @@
                     <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                   </div>
                 </div>
-                <div class="col mt-2">
+                <div class="col mt-3">
                   <div class="form-group col">
-                    <textarea name="text" class="form-control form-control-lg" placeholder="Write your main idea here, pointing out the geographic and temporal location." id="" cols="30" rows="10"></textarea>
+                    <textarea name="text" class="form-control form-control-lg" placeholder="Write your main idea here, pointing out the geographic and temporal location." id="" cols="30" rows="4"></textarea>
                     <small>
                       Don't forget to name your history.
                     </small>
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="d-grid gap-2 mt-2 mb-3">
+                  <div class="d-grid gap-2 mt-3 mb-3">
                     <button type="button" class="btn exo-btn btn-primary">
                       Send
                     </button>
@@ -196,27 +203,52 @@
       </section>      
     <!-- /Juega yá -->
 
-    <!-- Footer -->
+<!-- social -->
+<div id="social" class="row mt-4 mb-4">
+  <a id="social-span" class="offset-anchor"></a>
+
+  <div class="col-8 offset-2">
+    <button type="button" class="btn exo-btn btn-primary" data-bs-toggle="modal" data-bs-target="#social-network">
+      <h2>This whole thing is just starting, click here to follow he amazing universe of EXODUST</h2>
+    </button> 
+  </div>
+</div>
+
+      <!-- modal-content -->
+            <div class="modal fade" id="social-network" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Exodust social network</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <a href="#" target="_blank"><span id="insta-logo"></span></a>
+                    <a href="#" target="_blank"><span id="twitter-logo"></span></a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!-- /modal-content -->
+
+
+<!-- /social -->
+
+<!-- Footer -->
     <footer id="footer" class="pb-4 pt-4">
       <div class="container">
         <div class="row text-center">
           <div class="col-12 col-lg">
-            <a href="#">FAQ</a>
-          </div>
-          <div class="col-12 col-lg">
-            <a href="#">Contac us</a>
-          </div>
-          <div class="col-12 col-lg">
-            <a href="#">Blog</a>
-          </div>
-          <div class="col-12 col-lg">
             <a href="#">Terms and conditions</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="#">Privacy</a>
+            <a href="#">Created by Sergio Galarza</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="#">Projects</a>
+            <a href="#">Author Blog</a>
           </div>
         </div>
       </div>
